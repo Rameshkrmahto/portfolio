@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* ! important : it is a keyword used for overriding the existing CSS stylings or declarations*/
+:root {
+  --brandColor: rgb(152, 67, 231);
+}
+body {
+  background-color: black;
+}
+/* Adding stylings for existing class of bootstrap */
+.navbar {
+  background-color: var(--brandColor) !important;
+  box-shadow: 2px 2px 20px var(--brandColor);
+}
+/* Creating a new class to add stylings  */
+/* .bg-custom {
+  background-color: blueviolet !important;
+} */
+.nav-link {
+  color: white !important;
+  margin-right: 15px;
+}
+.nav-link:hover {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.navbar-toggler {
+  border-color: white;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.border {
+  border-color: var(--brandColor) !important;
+}
+.g-col-6 {
+  transition: transform 0.3s ease-in;
+}
+.g-col-6:hover {
+  transform: translateY(-10px);
+  box-shadow: 2px 2px 20px var(--brandColor);
+}
+.custom_link {
+  color: var(--brandColor);
+  text-decoration: none;
+}
+.custom_link:hover {
+  text-decoration: underline;
+  background-color: var(--brandColor);
+  color: white;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.btn-primary {
+  background-color: var(--brandColor) !important;
+}
+.bi {
+  color: white;
+  margin-right: 10px;
+  font-size: 30px;
+}
+.downloadIcon {
+  color: white;
+  font-size: 30px;
+  margin-right: 0px;
+}
+.downloadIconParent a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rounded-circle{
+  transition: transform 0.3s linear;
+}
+
+.rounded-circle:hover {
+  box-shadow: 2px 2px 20px var(--brandColor);
+  transform: scale(1.1);
+}
+.description {
+  /* border: 1px solid white; */
+  margin-top: 50px;
+  transition: transform 0.3s ease-in;
+  text-align: justify;
+  border-left: 10px solid var(--brandColor);
+  border-right: 10px solid var(--brandColor);
+  border-radius: 8px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 1rem;
+}
+.description:hover {
+  box-shadow: 2px 2px 20px var(--brandColor);
+  transform: translateY(-6px);
+}
+
+@media (max-width: 400px) {
+  .description {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  .description p.h5 {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
+.bg-secondary {
+  background-color: var(--brandColor) !important;
+}
+.btn{
+  border-style: none;
+  transition: transform 0.3s ease-in;
+}
+.btn:hover{
+  box-shadow: 2px 2px 20px var(--brandColor);
+  transform: translateY(-6px);
+  border-radius:5px;
+}
